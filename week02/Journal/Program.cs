@@ -27,13 +27,13 @@ class Program
             if (selectedChoice == 1)
             {
                 // Console.WriteLine("You selected write");
-                PromtGenerator motivation = new PromtGenerator();
+                PromptGenerator motivation = new PromptGenerator();
                 string tempMotivation = motivation.GetRandomMotivation();
                 Console.WriteLine("");
                 Console.WriteLine(tempMotivation);
                 Console.WriteLine("");
 
-                PromtGenerator prompt = new PromtGenerator();
+                PromptGenerator prompt = new PromptGenerator();
                 string tempPrompt = prompt.GetRandomPromt();
                 Console.WriteLine(tempPrompt);
                 string userResponse = Console.ReadLine();
@@ -44,7 +44,7 @@ class Program
                 Entry response = new Entry();
                 response._date = dateText;
                 response._entryText = userResponse;
-                response._promtText = tempPrompt;
+                response._promptText = tempPrompt;
                 response._motivationText = tempMotivation;
 
                 journal.AddEntry(response);

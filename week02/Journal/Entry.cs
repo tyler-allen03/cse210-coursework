@@ -6,7 +6,7 @@
 public class Entry
 {
     public string _date;
-    public string _promtText;
+    public string _promptText;
     public string _entryText;
     public string _motivationText;
 
@@ -17,7 +17,7 @@ public class Entry
     public void Display()
     {
         Console.WriteLine("");
-        Console.WriteLine($"{_date} - Promt: {_promtText} - Motivation: {_motivationText}");
+        Console.WriteLine($"{_date} - Promt: {_promptText} - Motivation: {_motivationText}");
         Console.WriteLine(_entryText);
         Console.WriteLine("");
     }
